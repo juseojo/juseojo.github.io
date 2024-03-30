@@ -1,3 +1,11 @@
+
+.v-line{
+  border-left: thick solid #000;
+  height:100%;
+  left: 50%;
+  position: absolute;
+ }
+
 .highlight table td { padding: 5px; }
 
 .highlight table pre { margin: 0; }
@@ -190,10 +198,3 @@ a:hover { text-decoration: underline; }
 .site-footer-owner { display: block; font-weight: bold; }
 
 .site-footer-credits { color: #819198; }
-
-.v-line{
-  border-left: thick solid #000;
-  height:50%;
-  left: 50%;
-  position: absolute;
- }
