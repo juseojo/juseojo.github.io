@@ -7,8 +7,8 @@ locale:       "kr"
 
 # About/contact
 author:
-  name:       Author name
-  url:        http://yourhomepage.com 
+  name:       Juseojo
+  url:        https://github.com/juseojo
 
 # Gems
 gems:
