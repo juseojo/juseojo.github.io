@@ -126,8 +126,7 @@
 
 * { box-sizing: border-box; }
 
-body { padding: 0; margin: 0; font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #606c71;
-  letter-spacing :0.5px;}
+body { padding: 0; margin: 0; font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #606c71;}
 
 a { color: #1e6bb8; text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -154,6 +153,8 @@ a:hover { text-decoration: underline; }
 @media screen and (min-width: 64em) { .project-tagline { font-size: 1.25rem; } }
 @media screen and (min-width: 42em) and (max-width: 64em) { .project-tagline { font-size: 1.15rem; } }
 @media screen and (max-width: 42em) { .project-tagline { font-size: 1rem; } }
+
+.im {font-family: 'SUIT', sans-serif; margin-top: 2rem; margin-bottom: 1rem; font-weight: 500; color: #140063;}
 
 .main-content { word-wrap: break-word; }
 .main-content :first-child { margin-top: 0; }
