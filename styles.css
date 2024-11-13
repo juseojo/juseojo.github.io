@@ -1,0 +1,331 @@
+/* 기본 스타일 */
+
+html {
+    height:100vh;
+}
+header {
+    font-family: "San Francisco";
+    background-color: white;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+body {
+    font-family: "San Francisco";
+    margin: 0 auto;
+    padding: 0;
+    background-color: white;
+    min-height:100vh;
+    color: black;
+}
+
+.container {
+	max-width: 1000px; /* 원하는 최대 넓이 */
+	margin: 0 auto; /* 화면 중앙 정렬 */
+	padding: 0 1rem; /* 여백을 줌 */
+}
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 100;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
+  }
+
+  /** Thin */
+  @font-face {
+    font-family: "San Francisco";
+    font-weight: 200;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
+  }
+
+  /** Regular */
+  @font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+  }
+
+  /** Medium */
+  @font-face {
+    font-family: "San Francisco";
+    font-weight: 500;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
+  }
+
+  /** Semi Bold */
+  @font-face {
+    font-family: "San Francisco";
+    font-weight: 600;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
+  }
+
+  /** Bold */
+  @font-face {
+    font-family: "San Francisco";
+    font-weight: 700;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+  }
+
+.profile-section {
+    display: flex;
+    align-items: flex-start;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+	border: 2px solid lightgrey;
+    border-radius: 27px;
+    margin-right: 2rem;
+    object-fit: cover;
+}
+
+.profile-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start; /* 프로필 정보 왼쪽 정렬 */
+}
+
+.profile-info h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: black;
+}
+
+.profile-info p {
+    margin: 0.2rem 0;
+    font-size: 1.2rem;
+}
+
+.action-btn {
+    background-color: #0a84ff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.7rem;
+    margin-top: 2.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* 구분선 */
+.divider {
+    border: 0;
+    border-top: 0.1px solid #c7c7c7;
+    margin: 0.1rem 0;
+}
+
+/* 앱 정보 섹션 */
+.app-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+	max-width: 1000px; /* 최대 너비 설정 */
+	margin: 0 auto; /* 가운데 정렬 */
+}
+
+.info-item {
+    margin: 0 1rem;
+    text-align: center;
+}
+
+.app-info .info-item p {
+	color: #878787; /* 모든 연령, 나이, 이메일 등의 텍스트 색상을 통일 */
+}
+
+.info-item p {
+    margin: 0.5rem 0;
+}
+
+.info-item b {
+    color: #808080;
+    font-size: 0.9rem;
+}
+
+/* 세로 구분선 */
+.vertical-divider {
+    height: 50px;
+    width: 1px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: #B3B3B3;
+}
+
+.recents {
+	display: flex;
+	justify-content: space-between;
+}
+
+.modal_btn {
+    background-color: white;
+    border: none;
+    font-size: 1.2rem;
+	color:  #1473E6;
+    font-weight: normal;
+    padding-top: 1rem;
+    padding-right: 0;
+    cursor: pointer;
+}
+.modal {
+/*팝업 배경*/
+	display: none; /*평소에는 보이지 않도록*/
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+}
+
+.history_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.history_list p {
+
+    font-weight: normal;
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.history_list h5 {
+    font-weight: normal;
+    font-size: 1rem;
+    color: #878787;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    white-space: nowrap;
+}
+
+.modal .modal_popup {
+/*팝업*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 20px;
+}
+.close_btn {
+    display: block;
+    border: none;
+    background-color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.news h1{
+    font-family: "San Francisco";
+    margin-top: 1rem;
+}
+
+.history {
+	text-align: right; /* 우측 정렬 */
+}
+
+.history p {
+    font-family: "San Francisco";
+	color: #6E6E6E; /* 기존 텍스트 색상과 동일하게 설정 */
+}
+
+/* 프로젝트 섹션 */
+.projects {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+	max-width: 1000px; /* 최대 너비 설정 */
+
+}
+
+.project-card {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    width: 250px;
+	height: 450px;
+    text-align: center;
+    border: 1px solid rgb(101, 101, 101);
+}
+
+.project-video {
+    width: 250px;
+	height: 450px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    border: 1px solid rgb(101, 101, 101);
+}
+
+.project-image {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+.project-card h3 {
+    font-family: "San Francisco";
+    font-size: 1.5rem;
+    color: #000000;
+    margin: 0;
+}
+
+.project-card a {
+    font-family: "San Francisco";
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: #727272;
+}
+
+.project-card p {
+    font-family: "San Francisco";
+    font-size: 1rem;
+    color: #727272;
+}
+
+
+/* 기술 스택 */
+.skills {
+    text-align: left;
+	max-width: 1000px; /* 최대 너비 설정 */
+	margin: 0 auto; /* 가운데 정렬 */
+    padding-bottom: 5rem;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.skills-item {
+    margin-right: 10rem;
+}
+
+/* 푸터 */
+footer {
+    background-color: #1c1c1e;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+

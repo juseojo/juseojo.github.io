@@ -1,0 +1,182 @@
+/* 기본 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+header {
+    background-color: white;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.container {
+	max-width: 1000px; /* 원하는 최대 넓이 */
+	margin: 0 auto; /* 화면 중앙 정렬 */
+	padding: 0 1rem; /* 여백을 줌 */
+}
+
+.profile-section {
+    display: flex;
+    align-items: flex-start;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    margin-right: 2rem;
+    object-fit: cover;
+}
+
+.profile-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start; /* 프로필 정보 왼쪽 정렬 */
+}
+
+.profile-info h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: black;
+}
+
+.profile-info p {
+    margin: 0.2rem 0;
+    font-size: 1.2rem;
+}
+
+.action-btn {
+    background-color: #0a84ff;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.action-btn:hover {
+    background-color: #0066cc;
+}
+
+/* 구분선 */
+.divider {
+    border: 0;
+    border-top: 1px solid #B3B3B3;
+    margin: 1rem 0;
+}
+
+/* 앱 정보 섹션 */
+.app-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+	max-width: 1000px; /* 최대 너비 설정 */
+	margin: 0 auto; /* 가운데 정렬 */
+}
+
+.info-item {
+    margin: 0 1rem;
+    text-align: center;
+}
+
+.info-item p {
+    margin: 0.5rem 0;
+}
+
+.info-item strong {
+    color: #22211f;
+    font-size: 0.9rem;
+}
+
+/* 세로 구분선 */
+.vertical-divider {
+    height: 50px;
+    width: 1px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: #B3B3B3;
+}
+
+
+/* 프로젝트 섹션 */
+.projects {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+	max-width: 1000px; /* 최대 너비 설정 */
+	margin: 0 auto; /* 가운데 정렬 */
+}
+
+.project-card {
+    background-color: #6E6E6E;
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin: 1rem;
+    width: 250px;
+	height: 500px;
+    text-align: center;
+}
+
+.project-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #a1a1a1;
+}
+
+/* 기술 스택 */
+.skills {
+    padding: 2rem;
+    text-align: center;
+	max-width: 1000px; /* 최대 너비 설정 */
+	margin: 0 auto; /* 가운데 정렬 */
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.skill-item {
+    background-color: #0a84ff;
+    color: #fff;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    min-width: 100px;
+    text-align: center;
+}
+
+/* 푸터 */
+footer {
+    background-color: #1c1c1e;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
