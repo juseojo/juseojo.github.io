@@ -88,7 +88,7 @@ header {
 .info-item {
     margin: 0 1rem;
     text-align: center;
-    display:inline;
+    white-space:nowrap;
 }
 
 .info-item p {
