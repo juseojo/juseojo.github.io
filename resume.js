@@ -37,3 +37,29 @@ function adjustBodyHeight() {
   // 초기 높이 설정 및 윈도우 크기 조정 시 업데이트
 adjustBodyHeight();
 window.addEventListener('resize', adjustBodyHeight);
+
+// 프로젝트 carousel
+document.addEventListener('DOMContentLoaded', () => {
+    const prevBtn = document.querySelector('.carousel-btn.prev');
+    const nextBtn = document.querySelector('.carousel-btn.next');
+    const carousel = document.querySelector('.carousel');
+    const cards = document.querySelectorAll('.project-card');
+    let currentIndex = 0;
+    
+    // 카드 간 간격이 있다면 해당 값 (여기서는 카드 width 250px + margin 약 16px*2)
+    const cardWidth = cards[0].offsetWidth + 32; 
+
+    nextBtn.addEventListener('click', () => {
+      if (currentIndex < cards.length - 1) {
+        currentIndex++;
+        carousel.style.transform = `translateX(-${cardWidth * currentIndex}px)`;
+      }
+    });
+    
+    prevBtn.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        carousel.style.transform = `translateX(-${cardWidth * currentIndex}px)`;
+      }
+    });
+  });
