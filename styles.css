@@ -278,7 +278,9 @@ body {
     height: auto;
     object-fit: cover;
     border-radius: 10px;
-    margin-top: 100px;
+    margin-top: 80px;
+    margin-bottom: 15px;
+    border: 0.5px solid rgb(101, 101, 101);
 }
 
 .project-card h3 {
@@ -305,8 +307,13 @@ body {
     display: flex;
     transition: transform 0.5s ease;
     overflow: hidden;
-    width: 2000px; /* 원하는 고정 너비로 설정 (예: 800px) */
+    width: 3000px;
 }
+
+.carousel-container {
+    overflow: hidden;
+    width: 925px; /* 원하는 고정 너비로 설정 (예: 800px) */
+  }
 
 .carousel-btn {
     position: absolute;

@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
 
     // 카드 간 간격이 있다면 해당 값 (여기서는 카드 width 250px + margin 약 16px*2)
-    const cardWidth = cards[0].offsetWidth + 25;
+    const cardWidth = cards[0].offsetWidth + 15;
 
     nextBtn.addEventListener('click', () => {
       if (currentIndex < cards.length - 1) {
