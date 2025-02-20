@@ -245,7 +245,10 @@ body {
     display: flex;
     justify-content: center;
 	max-width: 1000px; /* 최대 너비 설정 */
-
+    position: relative;
+    overflow: hidden; /* 영역 밖의 내용은 숨김 */
+    margin: 0 auto;
+    padding: 2rem 0;
 }
 
 .project-card {
@@ -328,7 +331,7 @@ body {
   .carousel-btn.next {
     right: 10px;
   }
-  
+
 /* 기술 스택 */
 .skills {
     text-align: left;
