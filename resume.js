@@ -45,9 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const carousel = document.querySelector('.carousel');
     const cards = document.querySelectorAll('.project-card');
     let currentIndex = 0;
-    
+
     // 카드 간 간격이 있다면 해당 값 (여기서는 카드 width 250px + margin 약 16px*2)
-    const cardWidth = cards[0].offsetWidth + 32; 
+    const cardWidth = cards[0].offsetWidth + 25;
 
     nextBtn.addEventListener('click', () => {
       if (currentIndex < cards.length - 1) {
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         carousel.style.transform = `translateX(-${cardWidth * currentIndex}px)`;
       }
     });
-    
+
     prevBtn.addEventListener('click', () => {
       if (currentIndex > 0) {
         currentIndex--;

@@ -241,35 +241,32 @@ body {
 
 /* 프로젝트 섹션 */
 .projects {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-	max-width: 1000px; /* 최대 너비 설정 */
     position: relative;
-    overflow: hidden; /* 영역 밖의 내용은 숨김 */
+    overflow: hidden; /* 영역 밖 내용 숨김 */
+    background-color: white;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 2rem 80px;
+    padding: 2rem 40px
 }
 
 .project-card {
+    background-color: white;
+    width: 225px;
+	height: 450px;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
     border-radius: 15px;
-    width: 250px;
-	height: 450px;
-    text-align: center;
     border: 1px solid rgb(101, 101, 101);
-}
+    text-align: center;
+  }
 
 .project-video {
-    width: 250px;
+    width: 225px;
 	height: 450px;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
     border-radius: 15px;
@@ -307,9 +304,11 @@ body {
 .carousel {
     display: flex;
     transition: transform 0.5s ease;
-  }
-  
-  .carousel-btn {
+    overflow: hidden;
+    width: 2000px; /* 원하는 고정 너비로 설정 (예: 800px) */
+}
+
+.carousel-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -319,21 +318,20 @@ body {
     height: 0;
     cursor: pointer;
     z-index: 1;
-  }
-  
-  .carousel-btn.prev {
-    left: 20px; /* 좌측 여백 내에서 위치 */
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-right: 20px solid #0a84ff; /* 파란색 삼각형 */
-  }
-  
-  .carousel-btn.next {
-    right: 20px; /* 우측 여백 내에서 위치 */
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-left: 20px solid #0a84ff; /* 파란색 삼각형 */
-  }
+}
+
+.carousel-btn.prev {
+    left: -10px; /* 좌측 여백 내에서 위치 */
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 15px solid #0a84ff; /* 파란색 삼각형 */
+}
+.carousel-btn.next {
+    right: -10px; /* 우측 여백 내에서 위치 */
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #1473E6; /* 파란색 삼각형 */
+}
 
 /* 기술 스택 */
 .skills {
