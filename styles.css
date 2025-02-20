@@ -248,7 +248,7 @@ body {
     position: relative;
     overflow: hidden; /* 영역 밖의 내용은 숨김 */
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 2rem 80px;
 }
 
 .project-card {
@@ -309,27 +309,30 @@ body {
     transition: transform 0.5s ease;
   }
   
-  /* 좌우 버튼 스타일 */
   .carousel-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background: transparent;
     border: none;
-    color: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    width: 0;
+    height: 0;
     cursor: pointer;
     z-index: 1;
   }
   
   .carousel-btn.prev {
-    left: 10px;
+    left: 20px; /* 좌측 여백 내에서 위치 */
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #0a84ff; /* 파란색 삼각형 */
   }
   
   .carousel-btn.next {
-    right: 10px;
+    right: 20px; /* 우측 여백 내에서 위치 */
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #0a84ff; /* 파란색 삼각형 */
   }
 
 /* 기술 스택 */
